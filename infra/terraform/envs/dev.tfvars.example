@@ -1,0 +1,8 @@
+# Pass with -var-file (copy to a git-ignored name first if you add real values). No secrets here.
+subscription_id  = "00000000-0000-0000-0000-000000000000"
+env              = "dev"
+location         = "australiaeast"
+purge_protection = false
+external_ingress = false
+enable_claude    = false
+alert_email      = ""

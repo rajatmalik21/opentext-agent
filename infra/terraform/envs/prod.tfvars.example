@@ -1,0 +1,8 @@
+subscription_id  = "00000000-0000-0000-0000-000000000000"
+env              = "prod"
+purge_protection = true
+external_ingress = false # put API Management / Front Door + Entra auth in front first (ADR-0007)
+min_replicas     = 1
+max_replicas     = 4
+log_retention_days = 90
+alert_email      = "owner@example.com"

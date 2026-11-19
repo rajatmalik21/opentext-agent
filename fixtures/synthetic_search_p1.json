@@ -1,0 +1,52 @@
+{
+  "total": 12,
+  "start": 1,
+  "maxResults": 5,
+  "results": [
+    {
+      "id": "syn-001",
+      "title": "Upgrade guide for version 24.2",
+      "description": "Step-by-step <b>upgrade</b> instructions from 23.4 to 24.2, including pre-upgrade checks.",
+      "type": "Documentation",
+      "product": "OpenText Content Cloud",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-001"
+    },
+    {
+      "id": "syn-002",
+      "title": "Known issue: search indexing stalls after patch 24.2.1",
+      "description": "Indexing jobs can stall after applying patch 24.2.1. Workaround: restart the index service.",
+      "type": "Knowledge Base",
+      "product": "OpenText Content Cloud",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-002"
+    },
+    {
+      "id": "syn-003",
+      "title": "Configure email-to-ticket integration",
+      "description": "Set up a mailbox connector so inbound email creates tickets automatically.",
+      "type": "Documentation",
+      "product": "OpenText Service Management",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-003"
+    },
+    {
+      "id": "syn-004",
+      "title": "Release notes 25.1",
+      "description": "New features and fixes in service management release 25.1.",
+      "type": "Release Notes",
+      "product": "OpenText Service Management",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-004"
+    },
+    {
+      "id": "syn-005",
+      "title": "SAML single sign-on setup guide",
+      "description": "Configure SAML 2.0 single sign-on with an external identity provider.",
+      "type": "Documentation",
+      "product": "OpenText Extended ECM",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-005"
+    }
+  ]
+}

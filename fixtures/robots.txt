@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*?*referrer*
+
+# Sitemap
+Sitemap: https://my.opentext.com/sitemap.xml

@@ -1,0 +1,25 @@
+{
+  "total": 12,
+  "start": 11,
+  "maxResults": 5,
+  "results": [
+    {
+      "id": "syn-011",
+      "title": "End of support dates for 22.x",
+      "description": "Support for the 22.x line ends on a published date; plan migration to 24.x.",
+      "type": "Lifecycle",
+      "product": "OpenText Extended ECM",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-011"
+    },
+    {
+      "id": "syn-012",
+      "title": "Customer portal access and licensing FAQ",
+      "description": "How to request portal access, manage licenses and download software updates.",
+      "type": "FAQ",
+      "product": "OpenText Content Cloud",
+      "lastModified": "2026-03-01",
+      "url": "https://fixtures.invalid/synthetic/syn-012"
+    }
+  ]
+}

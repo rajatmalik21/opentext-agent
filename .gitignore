@@ -1,0 +1,42 @@
+# Secrets and local config: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local data: index, HTTP cache, run output
+data/
+
+# Terraform: state can contain secrets
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+terraform.tfvars
+*.auto.tfvars
+backend.hcl
+!.terraform.lock.hcl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

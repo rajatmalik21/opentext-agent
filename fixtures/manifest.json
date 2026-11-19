@@ -1,0 +1,8 @@
+{
+  "description": "SYNTHETIC fixtures, not real OpenText data",
+  "pages": {
+    "1": "synthetic_search_p1.json",
+    "6": "synthetic_search_p6.json",
+    "11": "synthetic_search_p11.json"
+  }
+}

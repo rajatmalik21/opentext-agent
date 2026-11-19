@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "kind": "offline-retrieval",
+    "embedder": "hashing-v1-512 (lexical)",
+    "questions": 39
+  },
+  "results": {
+    "distractors_0": {
+      "documents": 10,
+      "modes": {
+        "bm25": {
+          "all": {
+            "n": 22,
+            "hit@1": 20,
+            "hit@3": 21,
+            "hit@5": 21,
+            "mrr": 0.9318
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 5,
+            "hit@3": 6,
+            "hit@5": 6,
+            "mrr": 0.7857
+          },
+          "missed_at_5": [
+            "R06"
+          ]
+        },
+        "vector": {
+          "all": {
+            "n": 22,
+            "hit@1": 17,
+            "hit@3": 17,
+            "hit@5": 17,
+            "mrr": 0.7727
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 2,
+            "hit@3": 2,
+            "hit@5": 2,
+            "mrr": 0.2857
+          },
+          "missed_at_5": [
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06"
+          ]
+        },
+        "hybrid": {
+          "all": {
+            "n": 22,
+            "hit@1": 20,
+            "hit@3": 21,
+            "hit@5": 21,
+            "mrr": 0.9242
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 5,
+            "hit@3": 6,
+            "hit@5": 6,
+            "mrr": 0.7619
+          },
+          "missed_at_5": [
+            "R06"
+          ]
+        }
+      },
+      "spurious_with_stopwords": {
+        "bm25": {
+          "n": 5,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U05",
+            "O04"
+          ]
+        },
+        "hybrid": {
+          "n": 5,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U05",
+            "O04"
+          ]
+        }
+      },
+      "vector_floor_sweep": {
+        "0.0": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 22,
+          "mrr": 0.9333,
+          "spurious": 10,
+          "spurious_of": 10
+        },
+        "0.05": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 22,
+          "mrr": 0.9333,
+          "spurious": 9,
+          "spurious_of": 10
+        },
+        "0.1": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 21,
+          "mrr": 0.9318,
+          "spurious": 7,
+          "spurious_of": 10
+        },
+        "0.1325": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 21,
+          "mrr": 0.9242,
+          "spurious": 5,
+          "spurious_of": 10
+        },
+        "0.2": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 21,
+          "mrr": 0.9318,
+          "spurious": 5,
+          "spurious_of": 10
+        },
+        "0.3": {
+          "n": 22,
+          "hit@1": 20,
+          "hit@3": 21,
+          "hit@5": 21,
+          "mrr": 0.9318,
+          "spurious": 5,
+          "spurious_of": 10
+        }
+      },
+      "spurious_without_stopwords": {
+        "bm25": {
+          "n": 9,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U05",
+            "O01",
+            "O03",
+            "O04",
+            "O05"
+          ]
+        },
+        "hybrid": {
+          "n": 9,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U05",
+            "O01",
+            "O03",
+            "O04",
+            "O05"
+          ]
+        }
+      },
+      "modes_without_stopwords": {
+        "bm25": {
+          "all": {
+            "n": 22,
+            "hit@1": 20,
+            "hit@3": 21,
+            "hit@5": 21,
+            "mrr": 0.9318
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 5,
+            "hit@3": 6,
+            "hit@5": 6,
+            "mrr": 0.7857
+          },
+          "missed_at_5": [
+            "R06"
+          ]
+        },
+        "vector": {
+          "all": {
+            "n": 22,
+            "hit@1": 17,
+            "hit@3": 17,
+            "hit@5": 17,
+            "mrr": 0.7727
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 2,
+            "hit@3": 2,
+            "hit@5": 2,
+            "mrr": 0.2857
+          },
+          "missed_at_5": [
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06"
+          ]
+        },
+        "hybrid": {
+          "all": {
+            "n": 22,
+            "hit@1": 20,
+            "hit@3": 21,
+            "hit@5": 21,
+            "mrr": 0.9242
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 15,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 5,
+            "hit@3": 6,
+            "hit@5": 6,
+            "mrr": 0.7619
+          },
+          "missed_at_5": [
+            "R06"
+          ]
+        }
+      }
+    },
+    "distractors_300": {
+      "documents": 310,
+      "modes": {
+        "bm25": {
+          "all": {
+            "n": 22,
+            "hit@1": 18,
+            "hit@3": 19,
+            "hit@5": 19,
+            "mrr": 0.8409
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 14,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9333
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 4,
+            "hit@3": 5,
+            "hit@5": 5,
+            "mrr": 0.6429
+          },
+          "missed_at_5": [
+            "A01",
+            "R03",
+            "R06"
+          ]
+        },
+        "vector": {
+          "all": {
+            "n": 22,
+            "hit@1": 13,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 0.6429
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 13,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 0,
+            "hit@3": 1,
+            "hit@5": 1,
+            "mrr": 0.0918
+          },
+          "missed_at_5": [
+            "A01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R07"
+          ]
+        },
+        "hybrid": {
+          "all": {
+            "n": 22,
+            "hit@1": 17,
+            "hit@3": 19,
+            "hit@5": 19,
+            "mrr": 0.8106
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 14,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9333
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 3,
+            "hit@3": 5,
+            "hit@5": 5,
+            "mrr": 0.5476
+          },
+          "missed_at_5": [
+            "A01",
+            "R03",
+            "R06"
+          ]
+        }
+      },
+      "spurious_with_stopwords": {
+        "bm25": {
+          "n": 5,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U05",
+            "O04"
+          ]
+        },
+        "hybrid": {
+          "n": 7,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U05",
+            "O01",
+            "O04"
+          ]
+        }
+      },
+      "vector_floor_sweep": {
+        "0.0": {
+          "n": 22,
+          "hit@1": 17,
+          "hit@3": 18,
+          "hit@5": 19,
+          "mrr": 0.8121,
+          "spurious": 10,
+          "spurious_of": 10
+        },
+        "0.05": {
+          "n": 22,
+          "hit@1": 17,
+          "hit@3": 18,
+          "hit@5": 19,
+          "mrr": 0.8121,
+          "spurious": 10,
+          "spurious_of": 10
+        },
+        "0.1": {
+          "n": 22,
+          "hit@1": 18,
+          "hit@3": 19,
+          "hit@5": 19,
+          "mrr": 0.8409,
+          "spurious": 8,
+          "spurious_of": 10
+        },
+        "0.1325": {
+          "n": 22,
+          "hit@1": 17,
+          "hit@3": 19,
+          "hit@5": 19,
+          "mrr": 0.8106,
+          "spurious": 7,
+          "spurious_of": 10
+        },
+        "0.2": {
+          "n": 22,
+          "hit@1": 17,
+          "hit@3": 18,
+          "hit@5": 19,
+          "mrr": 0.8045,
+          "spurious": 5,
+          "spurious_of": 10
+        },
+        "0.3": {
+          "n": 22,
+          "hit@1": 18,
+          "hit@3": 19,
+          "hit@5": 19,
+          "mrr": 0.8409,
+          "spurious": 5,
+          "spurious_of": 10
+        }
+      },
+      "spurious_without_stopwords": {
+        "bm25": {
+          "n": 9,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U05",
+            "O01",
+            "O03",
+            "O04",
+            "O05"
+          ]
+        },
+        "hybrid": {
+          "n": 9,
+          "of": 10,
+          "ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U05",
+            "O01",
+            "O03",
+            "O04",
+            "O05"
+          ]
+        }
+      },
+      "modes_without_stopwords": {
+        "bm25": {
+          "all": {
+            "n": 22,
+            "hit@1": 18,
+            "hit@3": 19,
+            "hit@5": 19,
+            "mrr": 0.8409
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 14,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9333
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 4,
+            "hit@3": 5,
+            "hit@5": 5,
+            "mrr": 0.6429
+          },
+          "missed_at_5": [
+            "A01",
+            "R03",
+            "R06"
+          ]
+        },
+        "vector": {
+          "all": {
+            "n": 22,
+            "hit@1": 13,
+            "hit@3": 15,
+            "hit@5": 15,
+            "mrr": 0.6429
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 13,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 0,
+            "hit@3": 1,
+            "hit@5": 1,
+            "mrr": 0.0918
+          },
+          "missed_at_5": [
+            "A01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R07"
+          ]
+        },
+        "hybrid": {
+          "all": {
+            "n": 22,
+            "hit@1": 17,
+            "hit@3": 19,
+            "hit@5": 19,
+            "mrr": 0.8106
+          },
+          "direct": {
+            "n": 15,
+            "hit@1": 14,
+            "hit@3": 14,
+            "hit@5": 14,
+            "mrr": 0.9333
+          },
+          "paraphrase": {
+            "n": 7,
+            "hit@1": 3,
+            "hit@3": 5,
+            "hit@5": 5,
+            "mrr": 0.5476
+          },
+          "missed_at_5": [
+            "A01",
+            "R03",
+            "R06"
+          ]
+        }
+      }
+    }
+  }
+}

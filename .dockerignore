@@ -1,0 +1,12 @@
+.git
+.github
+infra
+data
+**/__pycache__
+.pytest_cache
+.mypy_cache
+.env
+*.tfstate*
+docs
+tests
+evals/results
