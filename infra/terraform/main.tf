@@ -30,14 +30,14 @@ resource "azurerm_user_assigned_identity" "app" {
 }
 
 resource "azurerm_container_registry" "acr" {
-  name                             = "acr${local.flat}"
-  resource_group_name              = azurerm_resource_group.rg.name
-  location                         = azurerm_resource_group.rg.location
-  sku                              = "Basic"
-  admin_enabled                    = false
-  anonymous_pull_enabled           = false
-  public_network_access_enabled    = true # PoC. Production: Premium + private endpoint (ADR-0007).
-  tags                             = local.tags
+  name                          = "acr${local.flat}"
+  resource_group_name           = azurerm_resource_group.rg.name
+  location                      = azurerm_resource_group.rg.location
+  sku                           = "Basic"
+  admin_enabled                 = false
+  anonymous_pull_enabled        = false
+  public_network_access_enabled = true # PoC. Production: Premium + private endpoint (ADR-0007).
+  tags                          = local.tags
 }
 
 resource "azurerm_role_assignment" "acr_pull" {
@@ -61,8 +61,6 @@ resource "azurerm_key_vault" "kv" {
     bypass         = "AzureServices"
   }
 }
-
-
 
 
 resource "azurerm_role_assignment" "kv_secrets_user" {
