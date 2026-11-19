@@ -57,6 +57,10 @@ resource "azurerm_key_vault" "kv" {
   soft_delete_retention_days    = 7
   public_network_access_enabled = true # PoC. Production: private endpoint + firewall.
   tags                          = local.tags
+
+  network_acls {
+    default_action = "Deny"
+    bypass         = "AzureServices"
 }
 
 resource "azurerm_role_assignment" "kv_secrets_user" {
