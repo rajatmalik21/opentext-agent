@@ -86,8 +86,8 @@ def test_terraform_variables_and_locals_are_declared() -> None:
 
 def test_terraform_security_properties() -> None:
     t = _tf_text()
-    assert "admin_enabled                 = false" in t
-    assert "rbac_authorization_enabled    = true" in t
+    assert "admin_enabled              = false" in t
+    assert "rbac_authorization_enabled = true" in t
     assert "allow_insecure_connections = false" in t
     assert re.search(r'variable "external_ingress".*?default\s*=\s*false', t, re.S)
     assert "azurerm_user_assigned_identity" in t and "UserAssigned" in t
