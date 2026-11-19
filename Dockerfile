@@ -2,7 +2,7 @@
 # Multi-stage, pinned base tag (pin by digest once resolved: `docker buildx imagetools inspect`),
 # non-root, no secrets baked in. The index is built from the SYNTHETIC fixtures at build time.
 
-FROM python:3.12-slim-bookworm AS build
+FROM python:3.15-slim-bookworm AS build
 ENV PIP_NO_CACHE_DIR=1 PIP_DISABLE_PIP_VERSION_CHECK=1
 WORKDIR /build
 COPY requirements.txt .
@@ -13,7 +13,7 @@ COPY fixtures ./fixtures
 ENV PYTHONPATH=/build/src
 RUN mkdir -p /build/data && /opt/venv/bin/python -m ota.cli --db /build/data/index.db ingest --source fixtures --fixtures-dir fixtures
 
-FROM python:3.12-slim-bookworm AS runtime
+FROM python:3.15-slim-bookworm AS runtime
 ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/app/src \
     PATH=/opt/venv/bin:$PATH OTA_DB=/app/data/index.db
 RUN groupadd --system --gid 10001 app && useradd --system --uid 10001 --gid app --no-create-home app
