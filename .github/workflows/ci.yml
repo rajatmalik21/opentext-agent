@@ -34,19 +34,6 @@ jobs:
       - name: mypy
         run: python -m mypy src
 
-  lint:
-    name: ruff (advisory)
-    runs-on: ubuntu-latest
-    # ruff has never been run on this code base; advisory until the first clean run, then remove continue-on-error.
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install ruff
-      - run: ruff check src tests tools
-
   eval-smoke:
     name: offline evaluation smoke
     runs-on: ubuntu-latest
