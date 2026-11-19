@@ -35,7 +35,7 @@ jobs:
           client-id: ${{ vars.AZURE_CLIENT_ID }}
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-      - uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v4
       - name: init
         run: terraform init -backend-config="resource_group_name=${{ vars.TFSTATE_RG }}" -backend-config="storage_account_name=${{ vars.TFSTATE_SA }}" -backend-config="container_name=tfstate" -backend-config="key=ota-agent.${{ inputs.environment }}.tfstate" -backend-config="use_azuread_auth=true"
       - name: build image in ACR (no docker daemon on the runner needed)
