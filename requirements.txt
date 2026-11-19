@@ -3,4 +3,4 @@
 # `pip install -r requirements.txt` in CI, which is the real test.
 requests==2.34.2
 pydantic==2.13.5
-numpy==2.5.3
+numpy==2.5.5
