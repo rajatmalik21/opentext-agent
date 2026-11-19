@@ -47,20 +47,21 @@ resource "azurerm_role_assignment" "acr_pull" {
 }
 
 resource "azurerm_key_vault" "kv" {
-  name                          = "kv${local.flat}"
-  resource_group_name           = azurerm_resource_group.rg.name
-  location                      = azurerm_resource_group.rg.location
-  tenant_id                     = data.azurerm_client_config.current.tenant_id
-  sku_name                      = "standard"
-  rbac_authorization_enabled    = true
-  purge_protection_enabled      = var.purge_protection
-  soft_delete_retention_days    = 7
+  name                       = "kv${local.flat}"
+  resource_group_name        = azurerm_resource_group.rg.name
+  location                   = azurerm_resource_group.rg.location
+  tenant_id                  = data.azurerm_client_config.current.tenant_id
+  sku_name                   = "standard"
+  rbac_authorization_enabled = true
+  purge_protection_enabled   = var.purge_protection
+  soft_delete_retention_days = 7
 
   network_acls {
     default_action = "Deny"
     bypass         = "AzureServices"
   }
 }
+
 
 
 
